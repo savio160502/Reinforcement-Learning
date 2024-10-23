@@ -1,0 +1,27 @@
+Resultados da primeira versão
+
+Recompensa média (ep_rew_mean):
+
+Inicialmente, a recompensa média por episódio era -9.96, o que indica que o agente estava cometendo muitos erros e recebendo penalidades.
+Com o tempo, essa recompensa média melhorou significativamente, chegando a 5.29 no último estágio, sugerindo que o agente estava realizando as tarefas corretamente e sendo recompensado por isso.
+Comprimento médio do episódio (ep_len_mean):
+
+O comprimento médio dos episódios também aumentou ao longo do treinamento, de 2.85 para 9.36. Isso significa que o agente está completando tarefas mais longas ou complexas com o tempo, sugerindo maior habilidade na geração e revisão de código.
+Approximate KL-divergence (approx_kl):
+
+O valor da KL-divergence aumentou de 0.043 para 0.064, o que ainda está dentro de uma faixa razoável. A KL-divergence mede o quanto a política atual diverge da anterior. Esse crescimento moderado é esperado e indica que a política está sendo ajustada gradualmente, sem grandes saltos.
+Policy Gradient Loss (policy_gradient_loss):
+
+O valor do policy gradient loss começou negativo, em torno de -0.0682, e se manteve nesse intervalo, com uma leve melhora para -0.0513. Valores negativos indicam que o agente está atualizando a política para maximizar sua recompensa.
+Value Loss (value_loss):
+
+O value loss começou relativamente alto, em torno de 41.6, mas diminuiu para 19.2, o que significa que o modelo de valor está aprendendo melhor a prever a recompensa futura.
+Explained Variance:
+
+Esse valor começou em torno de 0.009, ou seja, o agente inicialmente tinha uma previsão muito fraca sobre a recompensa esperada. Esse valor aumentou para 0.136, mas ainda é relativamente baixo, sugerindo que há espaço para melhorias nas previsões do valor.
+Clip Fraction e Entropy Loss:
+
+A clip_fraction flutuou entre 0.222 e 0.453, indicando que uma fração significativa das atualizações estava sendo cortada para manter a estabilidade de política.
+A entropy loss diminuiu ao longo do tempo, começando em -1.07 e chegando a -0.532, indicando que a política do agente está ficando menos exploratória e mais focada.
+
+Conclusão: Os resultados indicam uma evolução positiva no desempenho dos agentes, com um aumento na recompensa média e no comprimento dos episódios, enquanto as perdas associadas à política e ao valor foram gradualmente reduzidas. A política está sendo ajustada de forma estável, e o agente parece estar aprendendo a resolver as tarefas de forma mais eficiente. Ainda há espaço para melhorias na previsão das recompensas futuras, como mostrado pela baixa variância explicada. 
