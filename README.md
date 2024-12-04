@@ -1,6 +1,8 @@
 # **Treinamento de Agentes Cooperativos com Reinforcement Learning**
 
 ---
+https://www.canva.com/design/DAGYQeszbHU/GOA2OgnM6DKB-JA-4m0HVw/edit?utm_content=DAGYQeszbHU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 
 ## **Visão Geral do Projeto**
 
