@@ -27,8 +27,7 @@ Este projeto explora o treinamento de dois agentes **baseados em LLM (Large Lang
   - Monitora métricas como recompensas, escores de qualidade e violações utilizando ferramentas como `pylint`, `flake8` e `mypy`.
   - Oferece feedback para que os agentes melhorem seu desempenho ao longo dos episódios.
 
-### 3. **Reinforcement Learning**
-- Função de Recompensa:
+### 3. **Recompensas**
   - Avalia a qualidade do código gerado e revisado com base em:
     - Pontuação do `pylint` (aderência ao PEP 8).
     - Violações de estilo (`flake8`).
@@ -42,12 +41,10 @@ Este projeto explora o treinamento de dois agentes **baseados em LLM (Large Lang
 ## **Configuração e Instalação**
 
 ### **Dependências**
-1. Python 3.8 ou superior.
-2. PyTorch (com suporte a CUDA para aceleração por GPU, se disponível).
-3. Biblioteca Transformers da Hugging Face.
-4. Ferramentas adicionais:
+1. PyTorch (com suporte a CUDA para aceleração por GPU, se disponível).
+2. Biblioteca Transformers da Hugging Face.
+3. Ferramentas adicionais:
    - `pylint`
    - `flake8`
    - `mypy`
-   - `autopep8`
 
